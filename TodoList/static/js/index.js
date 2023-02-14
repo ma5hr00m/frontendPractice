@@ -1,4 +1,3 @@
-function  changePage() {
-    const page = document.querySelector(".intro");
-    page.style.display = page.style.display === "block" ? "none" : "block";
+function unfinishedAlert(){
+    alert("此功能尚未实现");
 }
