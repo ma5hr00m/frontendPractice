@@ -2,10 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/static/css/light.css">
+    <link rel="shortcut icon" href="/static/images/logo.svg">
     <link rel="shortcut icon" href="/TodoList/static/images/favicon.svg">
-    <title>备忘录</title>
+    <title>Victor Memo</title>
 </head>
 <body>
-    <h1>主页面</h1>
+    <div class="root">
+        <header>
+            <div class="header-wrapper">
+                <div class="logo-box">
+                    <img class="logo" src="/static/images/logo.svg">
+                </div>
+                <div class="title-box">
+                    <h1>Victor Memo</h1>
+                </div>
+                <div class="theme-box">
+                    <img class="theme-img" src="/static/images/light.svg"></img>
+                </div>
+                <div class="sign-box">
+                    <img class="user" src="/static/images/user.png">
+                    <p class="hello">Hello, Alice!</p>
+                    <button class="signout" type="button">Sign out</button>
+                </div>
+            </div>
+        </header>
+        <div class="middle-wrapper">
+            <nav>
+                <ul class="navbar">
+                    <li class="tags">
+                        <div class="tags-wrapper tags-short">
+                            <div class="tags-box">
+                                <img class="tags-img" src="/static/images/all.svg" height="20px">
+                                <label class="tags-label">所有</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tags">
+                        <div class="tags-wrapper">
+                            <div class="tags-box">
+                                <img class="tags-img" src="/static/images/no.svg" height="20px">
+                                <label class="tags-label">未完成</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tags">
+                        <div class="tags-wrapper">
+                            <div class="tags-box">
+                                <img class="tags-img" src="/static/images/yes.svg" height="20px">
+                                <label class="tags-label">已完成</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tags">
+                        <div class="tags-wrapper tags-short">
+                            <div class="tags-box">
+                                <img class="tags-img" src="/static/images/about.svg" height="20px">
+                                <label class="tags-label">统计</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <div class="func-wrapper"></div>
+                <div class="list-wrapper"></div>
+            </main>
+        </div>
+        <footer>
+            <div class="footer-wrapper">
+                <a class="foot-tip" href="https://www.sunday-webry.com/">✨ In memory of 死神坊ちゃんと黒メイド ✨</a>
+            </div>
+        </footer>
+    </div>
+    <script Language="JavaScript" src="/static/js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,241 @@
+html, body, .root{
+    position: relative;
+    display: block;
+
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #eee;
+}
+
+/* 页面主分区布局 */
+header{
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    height: 60px;
+    width: 100%;
+
+    background-color: #B3C0D1;
+}
+.middle-wrapper{
+    display: flex;
+    position: relative;
+
+    height: calc(100% - 120px);
+    width: 100%;
+}
+nav{
+    display: block;
+    position: relative;
+
+    height: 100%;
+    width: 220px;
+
+    background-color: #FFFFFF;
+}
+main{
+    display: block;
+    position: relative;
+
+    height: 100%;
+    width: calc(100% - 280px);
+
+    background-color: #EAEDF3;
+}
+footer{
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    height: 60px;
+    width: 100%;
+
+    background-color: #B3C0D1;
+}
+
+/* 顶部栏 header-wrapper */
+.header-wrapper{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+}
+.logo-box{
+    display: flex;
+
+    height: 60px;
+    width: fit-content;
+
+    padding: 0 10px 0 20px;/* 上右下左 */
+}
+.logo{
+    margin: auto;
+    padding: 0;
+
+    height: 36px;
+    width: 36px;
+}
+.title-box{
+    display: block;
+    position: relative;
+
+    height: 60px;
+    width: fit-content;
+}
+h1{
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #222;
+    line-height: 60px;
+}
+.theme-box{
+    display: flex;
+
+    height: 60px;
+    width: fit-content;
+
+    padding: 0 0 0 20px;
+}
+.theme-img{
+    cursor: pointer;
+
+    margin: auto;
+    padding: 0;
+
+    height: 20px;
+    width: 20px;
+}
+.sign-box{
+    display: flex;
+
+    margin-left: auto;
+    height: 60px;
+    width: fit-content;
+    padding: 0 20px 0 0;
+}
+.signout{
+    margin: auto;
+    padding: 0;
+
+    height: 36px;
+    width: 98px;
+
+    font-size: 14px;
+    font-weight: 800;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.signout:hover{
+    cursor: pointer;
+    background-color: #ddd;
+    color: #333;
+}
+.hello{
+    margin: 0;
+    padding: 0 40px 0 0;
+
+    height: 24px;
+    width: fit-content;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 60px;
+    color: rgb(0, 102, 255);
+}
+.user{
+    margin: auto;
+    padding: 0 10px 0 0;
+
+    height: 38px;
+    width: 38px;
+
+    border-radius: 100%;
+}
+
+/* 底边栏 footer */
+.footer-wrapper{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+}
+.foot-tip{
+    margin: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(119, 11, 152);
+    text-decoration: none;
+}
+
+/* 侧边栏 nav */
+.navbar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 280px;
+    margin: 0;
+    padding: 0;
+}
+.tags{
+    display: block;
+    position: relative;
+
+    height: 56px;
+    width: 240px;
+
+    cursor: pointer;
+}
+.tags:hover{
+    background-color: #ECF5FF;
+}
+.tags-wrapper{
+    display: flex;
+    position: absolute;
+    top: 16px;
+    left: 60px;
+}
+.tags-h1{
+    height: 24px;
+    width: 160px;
+}
+.tags-img{
+    line-height: 24px;
+    padding: 0 16px 0 0;
+}
+.tags-box{
+    display: flex;
+
+    margin: auto;
+    padding: 0;
+}
+.tags-label{
+    line-height: 24px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+}
