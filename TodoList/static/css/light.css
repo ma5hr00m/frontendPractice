@@ -44,9 +44,18 @@ main{
     position: relative;
 
     height: 100%;
-    width: calc(100% - 280px);
+    width: calc(100% - 520px);
 
     background-color: #EAEDF3;
+}
+aside{
+    display: block;
+    position: relative;
+
+    height: 100%;
+    width: 300px;
+
+    background-color: #fff;
 }
 footer{
     display: block;
@@ -194,7 +203,7 @@ h1{
     left: 0;
 
     height: 100%;
-    width: 280px;
+    width: 220px;
     margin: 0;
     padding: 0;
 }
@@ -203,7 +212,7 @@ h1{
     position: relative;
 
     height: 56px;
-    width: 240px;
+    width: 220px;
 
     cursor: pointer;
 }
@@ -238,4 +247,138 @@ h1{
     text-decoration: none;
     color: #555;
     cursor: pointer;
+}
+
+/* 信息显示区域 main */
+.func-wrapper{
+    display: block;
+    position: relative;
+
+    height: 80px;
+    width: 100%;
+}
+.list-wrapper{
+    display: block;
+    position: relative;
+
+    height: calc(100% - 60px);
+    width: 100%;
+}
+.search-wrapper{
+    display: flex;
+    position: absolute;
+    top: 10px;
+
+    height: 60px;
+    width: fit-content;
+}
+.search-box{
+    margin: auto;
+}
+.search-submit{
+    height: 32px;
+    width: 70px;
+    margin: 0 10px 0 20px;
+    padding: 0;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #419EFF;
+}
+.search-submit:hover{
+    cursor: pointer;
+    background-color: #027cff;
+    color: #fff;
+}
+.search-frame{
+    height: 30px;
+    width: 320px;
+}
+.add-wrapper{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    height: 40px;
+}
+.add{
+    margin: auto;
+    height: 32px;
+    width: 120px;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #419EFF;
+}
+.add:hover{
+    cursor: pointer;
+    background-color: #027cff;
+    color: #fff;
+}
+
+table{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+
+    width: calc(100% - 40px);
+
+    border-collapse:collapse;
+    background-color: #fff;
+}
+th{
+    height: 40px;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+td{
+    height: fit-content;
+}
+
+.statu-header{
+    width: 80px;
+}
+.content-header{
+    width: calc(100% - 240px);
+}
+.operation-header{
+    width: 160px;
+}
+.statu-items{
+    text-align: center;
+}
+.content-items{
+    padding: 0 50px;
+    width: calc(100% - 240px);
+
+    overflow: hidden;
+}
+.operation-items{
+    display: flex;
+}
+.operation-box{
+    margin: auto;
+}
+.table-button{
+    margin: 10px 5px;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #419EFF;
+    border: 0;
+    background-color: transparent;
+}
+.table-button:hover{
+    cursor: pointer;
+    color: #026bff;
 }
